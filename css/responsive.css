@@ -1,0 +1,761 @@
+/* ============================================================
+   Digital Maha E Seva Kendra - Responsive Stylesheet
+   Fully responsive: Desktop → Tablet → Mobile
+   ============================================================ */
+
+/* ---------- Global Overflow Guard ---------- */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video,
+iframe,
+.gallery-item,
+.office-img-card,
+.about-preview-img,
+.map-placeholder,
+.contact-form-wrapper,
+.contact-info-card,
+.service-card,
+.policy-content {
+  max-width: 100%;
+}
+
+/* ---------- Extra Large Desktops ---------- */
+@media (min-width: 1400px) {
+  .hero-content h1 {
+    font-size: 3.4rem;
+  }
+}
+
+/* ---------- Large Tablets & Small Desktops ---------- */
+@media (max-width: 1199.98px) {
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .navbar-brand img {
+    height: 52px;
+  }
+
+  .service-card h4 {
+    font-size: 1rem;
+  }
+}
+
+/* ---------- Tablets (≤991px) ---------- */
+@media (max-width: 991.98px) {
+  .top-bar {
+    display: none;
+  }
+
+  html {
+    scroll-padding-top: var(--navbar-height);
+  }
+
+  .main-header .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .navbar {
+    padding: 0.4rem 0;
+  }
+
+  .navbar-brand img {
+    height: 50px;
+  }
+
+  .navbar-collapse {
+    background: var(--white);
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow);
+    margin-top: 0.5rem;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    gap: 0.25rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.7rem 1rem !important;
+    border-radius: 8px;
+  }
+
+  .navbar-nav .nav-link::after {
+    display: none;
+  }
+
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link:hover {
+    background: rgba(13, 71, 161, 0.06);
+  }
+
+  .btn-nav-cta {
+    margin-left: 0 !important;
+    margin-top: 0.5rem;
+    text-align: center;
+    display: inline-flex !important;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-section {
+    min-height: auto;
+  }
+
+  .hero-content {
+    padding: 90px 0 70px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .features-bar {
+    margin-top: -40px;
+    padding: 1.5rem 1rem;
+  }
+
+  .about-preview-img .experience-badge {
+    right: 10px;
+    bottom: 10px;
+    padding: 1rem;
+  }
+
+  .about-preview-img .experience-badge h3 {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .about-list li {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .process-steps {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .process-steps::before {
+    display: none;
+  }
+
+  .process-arrow {
+    display: none !important;
+  }
+
+  .process-step {
+    min-width: 42%;
+    flex: 0 0 42%;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .cta-section {
+    text-align: center;
+  }
+
+  .page-banner {
+    padding: 70px 0 55px;
+  }
+
+  .page-banner h1 {
+    font-size: 2rem;
+  }
+
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  .contact-form-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  .contact-sidebar {
+    margin-top: 0.5rem;
+  }
+
+  .footer-policies {
+    gap: 0.4rem 0.8rem;
+  }
+}
+
+/* ---------- Mobile Landscape & Small Tablets (≤767px) ---------- */
+@media (max-width: 767.98px) {
+  body {
+    padding-bottom: 90px;
+  }
+
+  .hero-content {
+    padding: 80px 0 60px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.9rem;
+    line-height: 1.25;
+  }
+
+  .hero-content .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .hero-stat-item {
+    flex: 0 0 40%;
+  }
+
+  .hero-stat-item h3 {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    margin-bottom: 35px;
+  }
+
+  .section-title h2 {
+    font-size: 1.65rem;
+  }
+
+  .section-title p {
+    font-size: 0.92rem;
+    padding: 0 8px;
+  }
+
+  .about-preview-img img {
+    height: 280px;
+  }
+
+  .about-content h2 {
+    font-size: 1.55rem;
+  }
+
+  .gallery-item img {
+    height: 200px;
+  }
+
+  .gallery-filter {
+    gap: 0.5rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .contact-form-wrapper {
+    padding: 1.4rem;
+    margin-top: 0;
+  }
+
+  .contact-form-wrapper h3 {
+    font-size: 1.3rem;
+  }
+
+  .map-placeholder {
+    height: 240px;
+    padding: 1.2rem;
+    text-align: center;
+  }
+
+  .map-placeholder i {
+    font-size: 2.2rem;
+  }
+
+  .map-placeholder p {
+    font-size: 0.88rem;
+  }
+
+  .floating-buttons {
+    bottom: 12px;
+    right: 12px;
+    gap: 8px;
+  }
+
+  .floating-btn {
+    width: 46px;
+    height: 46px;
+    font-size: 1.15rem;
+  }
+
+  .footer-about,
+  .footer-widget {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-links a,
+  .footer-contact li {
+    justify-content: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .footer-policies {
+    justify-content: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .stat-card h3 {
+    font-size: 1.8rem;
+  }
+
+  .process-step {
+    min-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .process-step .step-number {
+    width: 70px;
+    height: 70px;
+    font-size: 1.3rem;
+  }
+
+  .why-card,
+  .service-card,
+  .testimonial-card,
+  .mv-card {
+    padding: 1.4rem 1.1rem;
+  }
+
+  .policy-content {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .policy-content h3 {
+    font-size: 1.05rem;
+  }
+
+  .hours-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .btn-primary-custom,
+  .btn-accent-custom,
+  .btn-outline-custom,
+  .btn-outline-primary-custom {
+    padding: 0.65rem 1.3rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ---------- Mobile Portrait (≤575px) ---------- */
+@media (max-width: 575.98px) {
+  .section-padding {
+    padding: 48px 0;
+  }
+
+  .hero-content {
+    padding: 70px 0 55px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.65rem;
+  }
+
+  .hero-badge {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.85rem;
+    letter-spacing: 0.5px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn-primary-custom,
+  .hero-buttons .btn-accent-custom,
+  .hero-buttons .btn-outline-custom {
+    width: 100%;
+    justify-content: center;
+    padding: 0.7rem 1rem;
+    font-size: 0.88rem;
+  }
+
+  .hero-stats {
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1.4rem;
+  }
+
+  .hero-stat-item {
+    flex: 0 0 100%;
+  }
+
+  .features-bar {
+    margin-top: -30px;
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+  }
+
+  .feature-item {
+    padding: 0.7rem 0.4rem;
+  }
+
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .feature-icon i {
+    font-size: 1.15rem;
+  }
+
+  .feature-item h5 {
+    font-size: 0.88rem;
+  }
+
+  .feature-item p {
+    font-size: 0.75rem;
+  }
+
+  .about-preview-img img {
+    height: 240px;
+  }
+
+  .about-preview-img .experience-badge {
+    right: 8px;
+    bottom: 8px;
+    padding: 0.7rem 0.9rem;
+  }
+
+  .about-preview-img .experience-badge h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-preview-img .experience-badge span {
+    font-size: 0.7rem;
+  }
+
+  .service-card {
+    padding: 1.25rem 0.9rem;
+  }
+
+  .service-card-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .service-card-icon i {
+    font-size: 1.4rem;
+  }
+
+  .service-card h4 {
+    font-size: 0.92rem;
+  }
+
+  .service-card p {
+    font-size: 0.8rem;
+  }
+
+  .service-card-detailed {
+    padding: 1.4rem 1.1rem;
+  }
+
+  .testimonial-card {
+    padding: 1.3rem;
+  }
+
+  .testimonial-card p {
+    font-size: 0.88rem;
+  }
+
+  .cta-section {
+    padding: 45px 0;
+  }
+
+  .cta-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .cta-section p {
+    font-size: 0.9rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-buttons .btn-accent-custom,
+  .cta-buttons .btn-outline-custom,
+  .cta-buttons .btn-primary-custom {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .page-banner {
+    padding: 55px 0 40px;
+  }
+
+  .page-banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .breadcrumb-custom {
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery-filter button {
+    padding: 0.35rem 0.85rem;
+    font-size: 0.78rem;
+  }
+
+  .gallery-item img {
+    height: 170px;
+  }
+
+  .gallery-overlay {
+    padding: 0.9rem;
+  }
+
+  .gallery-overlay h5 {
+    font-size: 0.9rem;
+  }
+
+  .navbar-brand img {
+    height: 42px;
+  }
+
+  .contact-info-card {
+    margin-bottom: 0.8rem;
+    padding: 1.4rem 1.1rem;
+  }
+
+  .contact-form-wrapper {
+    padding: 1.2rem;
+  }
+
+  .contact-info-card .d-flex.gap-2 {
+    flex-direction: column;
+  }
+
+  .contact-info-card .btn-primary-custom,
+  .contact-info-card .btn-accent-custom {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .map-placeholder {
+    height: auto;
+    min-height: 220px;
+    gap: 0.8rem;
+  }
+
+  .map-placeholder .btn-primary-custom {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.85rem;
+    padding: 0.65rem 1rem;
+  }
+
+  .mv-card {
+    padding: 1.3rem;
+  }
+
+  .office-img-card img {
+    height: 200px;
+  }
+
+  .policy-content {
+    padding: 1.2rem 1rem;
+    border-radius: 10px;
+  }
+
+  .policy-content p,
+  .policy-content li {
+    font-size: 0.9rem;
+  }
+
+  .footer-about img {
+    height: 58px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-policies {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .footer-policies .sep {
+    display: none;
+  }
+
+  .footer-policies a {
+    font-size: 0.82rem;
+  }
+
+  .main-footer {
+    padding-top: 50px;
+  }
+
+  .stat-card {
+    padding: 1.2rem 0.5rem;
+  }
+
+  .stat-card .stat-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .stat-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .lightbox-content {
+    max-width: 95%;
+  }
+
+  .lightbox-close {
+    top: -35px;
+    font-size: 1.6rem;
+  }
+}
+
+/* ---------- Very Small Phones (≤400px) ---------- */
+@media (max-width: 400px) {
+  .hero-content h1 {
+    font-size: 1.45rem;
+  }
+
+  .section-title h2 {
+    font-size: 1.4rem;
+  }
+
+  .page-banner h1 {
+    font-size: 1.35rem;
+  }
+
+  .navbar-brand img {
+    height: 38px;
+  }
+
+  .floating-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 1.05rem;
+  }
+
+  .feature-item h5 {
+    font-size: 0.8rem;
+  }
+}
+
+/* ---------- Landscape Phones ---------- */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-section {
+    min-height: auto;
+  }
+
+  .hero-content {
+    padding: 50px 0 40px;
+  }
+
+  .page-banner {
+    padding: 40px 0 30px;
+  }
+
+  .navbar-collapse {
+    max-height: 70vh;
+  }
+}
+
+/* ---------- Touch Devices ---------- */
+@media (hover: none) and (pointer: coarse) {
+  .service-card:hover,
+  .why-card:hover,
+  .testimonial-card:hover,
+  .contact-info-card:hover,
+  .mv-card:hover {
+    transform: none;
+  }
+
+  .gallery-overlay {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(13, 71, 161, 0.75), transparent 55%);
+  }
+
+  .gallery-overlay h5,
+  .gallery-overlay span {
+    transform: translateY(0);
+  }
+
+  .gallery-overlay .zoom-icon {
+    display: none;
+  }
+}
+
+/* ---------- Print ---------- */
+@media print {
+  .top-bar,
+  .main-header,
+  .floating-buttons,
+  #page-loader,
+  .cta-section {
+    display: none !important;
+  }
+
+  body {
+    padding: 0;
+    color: #000;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+/* ---------- Reduced Motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
