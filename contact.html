@@ -129,10 +129,17 @@
         <div class="col-lg-7">
           <div class="contact-form-wrapper" data-aos="fade-up">
             <h3>Send Us a Message</h3>
-            <div id="formSuccess" class="alert alert-success d-none" role="alert">
-              <i class="bi bi-check-circle-fill"></i> Thank you! Your message has been sent successfully. We will get back to you soon.
-            </div>
-            <form id="contactForm" novalidate>
+           
+            <form action="https://formsubmit.co/nikamakshay0143@gmail.com" method="POST">
+
+        <!-- FormSubmit Settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Contact Form Submission">
+        <input type="hidden" name="_template" value="table">
+
+        <!-- Optional Redirect -->
+        <!-- Replace with your thank you page -->
+        <input type="hidden" name="_next" value="https://akshay9075.github.io/SUNSHINE_REAL-ESTATE/contact.html">
               <div class="row g-3">
                 <div class="col-md-6">
                   <label for="contactName" class="form-label">Full Name <span class="text-danger">*</span></label>
